@@ -24,6 +24,16 @@ $roscore
 ```
 $roslaunch openni_launch openni.launch
 ```
+
+*Ubuntu 16.04使用kinect的使用freenect启动：
+```
+$roslaunch freenect_launch freenect.launch
+```
+*Ubuntu 14.04使用kincet的使用3d_sensor启动：
+```
+$roslaunch turtlebot_bringup 3d_SENSOR.launch
+```
+
 ## 3.查看ros的topic列表中是否有深度图像和rgb图像的topic：
 ```
 $rostopic list
@@ -47,6 +57,16 @@ $roslaunch aiibot_bringup base_control.launch
 ```
 $rosrun track_pkg kcf_node
 ```
+附：turtlebot2 启动步骤
+启动底座程序：
+```
+$roslaunch turtlebot_bringup minimal.launch
+```
+启动追踪程序并加上topic映射：
+```
+$rosrun track_pkg kcf_node /tracker/cmd_vel:=/cmd_vel_mux/input/teleop
+````
+
 ## 6.使用程序
 
 程序启动后，在图像窗口内鼠标左键框选所要跟踪的目标.
