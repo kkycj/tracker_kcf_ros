@@ -4,15 +4,15 @@
 # 开发环境：
 
 Ubuntu 14.04 + ros indigo
-
+*(Ubuntu 16.04 + ros kinetic)
 # 传感器：
 
-深度相机（Xtion pro live）
+深度相机（Xtion pro live）/*(kinect)
 
 # 实验平台：
 
 Aiibot
-
+*(turtlebot2)
 
 # 运行：
 
