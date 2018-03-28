@@ -3,16 +3,15 @@
 
 # 开发环境：
 
-Ubuntu 14.04 + ros indigo
-*(Ubuntu 16.04 + ros kinetic)
+Ubuntu 16.04 + ros kinetic
+
 # 传感器：
 
-深度相机（Xtion pro live）/*(kinect)
+深度相机 (kinect)
 
 # 实验平台：
 
-Aiibot
-*(turtlebot2)
+turtlebot2
 
 # 运行：
 
@@ -43,21 +42,13 @@ $rostopic list
 $catkin_make
 $source devel/setup.bash
 ```
+
+如果嫌麻烦可以在 ~/.bashrc 中加入Source命令。
+
 ## 5.运行：
 
-运行前需要打开移动平台，运行移动平台启动程序 aiibot_bringup
+### turtlebot2 启动步骤
 
-程序链接：http://git.aiiage.com:9000/liu.f/aiibot_bringup
-
-启动地盘程序：
-```
-$roslaunch aiibot_bringup base_control.launch
-```
-启动追踪程序
-```
-$rosrun track_pkg kcf_node
-```
-附：turtlebot2 启动步骤
 启动底座程序：
 ```
 $roslaunch turtlebot_bringup minimal.launch
