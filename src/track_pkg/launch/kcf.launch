@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="track_pkg" type="kcf_node" name="kcf_tracker"  output="screen">
+    <remap from="tracker/cmd_vel" to="cmd_vel_mux/input/teleop"/>
+  </node>
+</launch>
